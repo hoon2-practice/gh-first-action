@@ -10,4 +10,6 @@ jobs:
       - name: Print greeting # 단계 설명
         run: echo "Hello World!" # 단계 실행
       - name: Print goodbye
-        run: echo "Done - bye!"
+        run: |
+            echo "Start - Hi!"
+            echo "Done - bye!"
