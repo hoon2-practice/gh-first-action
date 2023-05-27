@@ -1,0 +1,13 @@
+# 워크플로우 이름
+name: First Workflow
+# 실행
+on: workflow_dispatch # 수동 실행
+# 할일 - job
+jobs:
+  first-job:
+    runs-on: ubuntu-latest # 최신 버전의 우분투에서 실행되도록 설정
+    steps:
+      - name: Print greeting # 단계 설명
+        run: echo "Hello World!" # 단계 실행
+      - name: Print goodbye
+        run: echo "Done - bye!"
